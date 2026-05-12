@@ -1,0 +1,69 @@
+# Vault — Agent Brief
+
+## Role
+
+Wiki maintenance agent.
+- `10-raw/` — source, **read-only** (immutable). 예외: frontmatter 추가만 OK.
+- `20-wiki/` — write·maintain
+- `00-inbox/` — read, process, compile
+
+## Folder map
+
+`10-raw/` source (immutable) · `20-wiki/` compiled knowledge · `00-inbox/` daily + drafts · `30-pdca/` retrospectives · `40-actions/` todos · `50-templates/rules/` 절차서 (trigger 시 read, `ingest-cases/` 하위 포함)
+
+## Context entry
+
+User context 필요 시 항상 먼저 → **`20-wiki/meta/about-you.md`**
+- 사용자 정체성 / 핵심 트레이트 / Focus principles / Current situation / Communication style
+
+Deep references (specific domain 질문 시):
+- `20-wiki/meta/identity-thesis.md` (선택, 작성 시) — 장기 누적
+- `20-wiki/meta/focus-principles-YYYY.md` (선택) — 그 해의 원칙
+- `20-wiki/meta/patterns.md` / `meta/anti-patterns.md`
+
+Active projects (사용자가 추가):
+- (예: `10-raw/books/reading-2026/_index.md`)
+- (예: `10-raw/projects/X/index.md`)
+
+### Usage rules
+
+1. Simple 질문 → `about-you.md`만으로 충분
+2. Deep 질문 → 관련 detail doc 함께
+3. "나에 대해 아는 거" 타입 → `about-you.md` 기반 + 필요 시 thesis
+4. 새 trait 감지·원칙 변경 → user 확인 후 `about-you.md` 갱신 제안
+
+## Triggers → rule file
+
+매칭 시 해당 rule file을 Read 후 따른다.
+
+| Trigger | Rule file |
+|---|---|
+| "ingest this" / 새 file in `10-raw/` | `50-templates/rules/ingest.md` |
+| 20-wiki/ 작성·수정 | `50-templates/rules/wiki-conventions.md` |
+| Todo 생성 | `50-templates/rules/todo-rules.md` |
+| "weekly/monthly PDCA" / "wiki lint" | `50-templates/rules/pdca.md` |
+
+## Quick rules (매턴 빈도 높음)
+
+- Todo default = work. Personal → `#personal` tag.
+- Todo format: `- [ ] content 📅 YYYY-MM-DD` (Tasks plugin)
+- 30-pdca/ + 20-wiki/ 내부 todo = dashboard 자동 제외. 노출하려면 memo 형식 또는 daily note 등록.
+- Korean default (변경 가능), tech term English 병기 권장
+- Cross-page link: `[[wikilink]]`
+
+## Manually managed (LLM 수정 금지)
+
+- `about-you.md` "Core traits" list + "Focus principles" 정의
+- 사용자가 추가하는 detail doc의 "open questions"
+
+Auto-update OK (proposals):
+- `about-you.md` "Current situation" / "Ongoing activities" — at monthly PDCA
+- (사용자 추가 detail doc) "Phase log" / "Monthly log" append
+- 기존 docs "open questions" — append OK
+
+## Query task
+
+질문 형식 trigger:
+1. `20-wiki/index.md` 통해 관련 페이지 탐색
+2. 페이지 읽고 종합 답변
+3. 새 insight → 신규 wiki page 저장 제안

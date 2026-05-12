@@ -1,0 +1,221 @@
+---
+tags: [identity, profile]
+domain: meta
+created: 2026-05-12
+updated: 2026-05-12
+sources: []
+confidence: medium
+version: "0.1"
+---
+
+# About [Your Name]
+
+> This document is **Claude's single entry point**.
+> 본인의 현재 정체성 스냅샷.
+> 트레이트 추가/수정: 이 문서 갱신 후 (선택) thesis로 반영.
+> 개인 reflections: `10-raw/personal-journal/`에 보관 (LLM processing off 가능).
+
+---
+
+## 🪞 One-Line Summary
+
+> _한 줄로 본인을 정의. 시작은 비워두고 점진적으로._
+
+---
+
+## 📍 Current Situation (YYYY-MM)
+
+### Job
+
+- **직무 / 회사 / 부서**:
+- 미션:
+- 경력:
+- 이전:
+
+### Life Phase
+
+- 현재 인생의 큰 사건/단계:
+- 진행 중인 큰 일:
+
+### Long-Term Plan (2–3 year horizon)
+
+- **2026**:
+- **2027**:
+- **2027–2028**:
+
+---
+
+## 🏛️ Identity Layers (선택)
+
+> 본인을 정의하는 4-Layer (또는 더 간단히):
+> What — How — Why — Embodied
+
+### Layer 1 — What: [정체성 한 문장]
+
+> _"본인 정체성"_
+
+### Layer 2 — How: [어떻게 일하는 사람]
+
+> _"..."_
+
+### Layer 3 — Why: [무엇을 위해 일하는 사람]
+
+> _"..."_
+
+### Layer 4 — Embodied: [그 정체성의 실증 증거]
+
+> _"..."_
+
+---
+
+## 🧭 Core Traits
+
+> 처음엔 3-5개로 시작, 시간이 지나며 확장. 외부 검증 데이터 있으면 함께 기록.
+
+### Layer 1 — [Group 이름]
+
+1. **트레이트 이름** — 설명. **External validation** (날짜): 검증 데이터.
+
+### Layer 2 — [Group 이름]
+
+2. **트레이트 이름** — 설명.
+
+---
+
+## ⭐ Focus Principles (YYYY–YYYY)
+
+> 1-3개. 본인이 이 시기에 집중하기로 한 원칙.
+
+```
+    Principle 1 — [한 줄]
+          ↓
+    Principle 2 — [한 줄]
+          ↓
+    Principle 3 — [한 줄]
+```
+
+### Principle 1: [원칙 이름]
+
+설명.
+
+### Principle 2: [원칙 이름]
+
+설명.
+
+### Principle 3: [원칙 이름]
+
+설명.
+
+**Adoption criterion**: 새 활동이 적어도 하나에 기여하는가?
+
+---
+
+## 🌑 Shadow Areas
+
+> 약점·블라인드 스팟. 정직한 자기인식. 강점의 다른 면이거나 의식적 학습 영역.
+
+### Shadow 1: [패턴 이름]
+
+설명.
+
+**Source**: 어떤 피드백·관찰에서 나왔는가.
+
+**Causal hypothesis**: 왜 일어나는가.
+
+---
+
+## 🚀 Current Major Ongoing Activities
+
+### Work
+
+- 진행 중인 큰 업무:
+
+### Knowledge & Writing (Craft)
+
+- 학습·글쓰기 활동:
+
+### Projects
+
+- 사이드 프로젝트:
+
+### Life
+
+- 인생 단계 관련:
+
+---
+
+## 🎓 Certifications / Credentials (선택)
+
+| Item | Issued | Expires | Domain |
+|---|---|---|---|
+| | | | |
+
+---
+
+## 🎤 Public Activities & Validated Impact (선택)
+
+### Large audience (one-time)
+
+### Mid-scale coaching (ongoing)
+
+### Small-scale direct management
+
+### External recommendations
+
+---
+
+## 🎯 How to Interact with [Your Name]
+
+### Communication style
+
+- 선호 응답 스타일:
+- 언어 선호 (Korean/English):
+- 답변 구조 선호:
+
+### What to avoid
+
+- LLM이 하지 않았으면 하는 것:
+
+### What is expected
+
+- 기대하는 응답 특성:
+
+---
+
+## 🔗 Detail Reference Documents
+
+### Meta (about you)
+
+- (선택) `[[identity-thesis]]` — 장기 누적
+- (선택) `[[focus-principles-YYYY]]` — 그 해의 원칙 compass
+- `[[patterns]]` — 반복 발견 패턴
+- `[[anti-patterns]]` — 비효율 접근
+
+### Projects
+
+- (사용자 추가)
+
+### Personal Reflection
+
+- `10-raw/personal-journal/` (있다면)
+
+---
+
+## 📝 Update Principles
+
+- **Manually managed (LLM 자동 수정 금지)**:
+  - Core traits 목록 + 정의
+  - Focus principles
+  - Shadow areas (새 추가는 사용자 확인 필수)
+- **Auto-update OK (제안만)**:
+  - Current situation
+  - Ongoing activities
+- **External validation data** (피드백/평가/성과) 새로 발견 시 관련 트레이트에 citation 추가
+- **새 trait 발견 시**: 이 문서 + (있다면) thesis 동시 갱신
+- **Focus principles 변경 시**: 이 문서 + (있다면) focus-principles-YYYY 동시 갱신
+
+---
+
+## 🔄 Version History
+
+- **v0.1** (YYYY-MM-DD): Initial setup from starter kit

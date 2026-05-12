@@ -1,0 +1,23 @@
+{
+  "_comment": "Claude Code settings template. 본인 ~/.claude/settings.json에 병합. enabledPlugins/extraKnownMarketplaces는 qmd 같은 MCP 도입 시 활성화. caveman/claude-hud는 선택 plugin.",
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
+    ],
+    "additionalDirectories": []
+  },
+  "enabledPlugins": {
+    "//": "qmd는 vault 검색용 MCP. 선택. 없으면 빈 객체 OK.",
+    "qmd@qmd": false
+  },
+  "extraKnownMarketplaces": {
+    "qmd": {
+      "source": {
+        "source": "github",
+        "repo": "tobi/qmd"
+      }
+    }
+  }
+}
